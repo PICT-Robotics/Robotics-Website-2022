@@ -1323,7 +1323,7 @@ figure.dotted-bg:before {
   font-size: 69px;
   font-weight: 900;
   font-family: "Arimo", sans-serif;
-  color: #D63447;
+  color: #52B2BF;
 }
 
 .counter-v1 .number-wrap .append-text {
@@ -1354,8 +1354,8 @@ figure.dotted-bg:before {
   line-height: 40px;
   position: relative;
   z-index: 1;
-  -webkit-box-shadow: 0px 30px 0 -20px #d63447;
-  box-shadow: 0px 30px 0 -20px #d63447;
+  -webkit-box-shadow: 0px 30px 0 -20px #52B2Bf;
+  box-shadow: 0px 30px 0 -20px #52B2Bf;
 }
 
 @media (max-width: 991.98px) {
