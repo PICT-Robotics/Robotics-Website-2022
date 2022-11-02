@@ -1119,12 +1119,17 @@ a, a:hover {
 
 @media (max-width: 767.98px) {
   .unslate_co--section {
+    width: 20%;
+    float: left;
     padding: 2rem 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
   }
 }
 
 .unslate_co--section a:hover {
-  color: #fff;
+  color: #52B2BF;
 }
 
 .heading-h2 {
