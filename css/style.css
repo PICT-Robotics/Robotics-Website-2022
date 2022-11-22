@@ -1162,18 +1162,6 @@ figure.dotted-bg {
   position: relative;
 }
 
-figure.dotted-bg:before {
-  z-index: -1;
-  content: "";
-  position: absolute;
-  bottom: -50px;
-  right: -50px;
-  width: 268px;
-  height: 224px;
-  background-image: url("../images/dotted_light.png");
-  background-repeat: no-repeat;
-}
-
 @media (max-width: 991.98px) {
   figure.dotted-bg:before {
     right: 0px;
