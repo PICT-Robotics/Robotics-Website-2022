@@ -2088,3 +2088,8 @@ span.error {
 .gsap-reveal-img .reveal-wrap .reveal-content .portfolio-item-content h3 {
   margin-bottom: 10px;
 }
+
+.gallery-image-wrapper{
+  padding: 10px ;
+  margin: auto;
+}
