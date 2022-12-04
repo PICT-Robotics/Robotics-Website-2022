@@ -7,7 +7,7 @@
 } */
 
 .timeline {
-  margin: 0;
+  margin: 2em;
   overflow: hidden;
   position: relative;
 }

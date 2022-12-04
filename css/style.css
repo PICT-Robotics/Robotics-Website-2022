@@ -58,7 +58,7 @@ a, a:hover {
 }
 
 .unslate_co--site-inner {
-  margin-bottom: 400px;
+  /* margin-bottom: 400px; */
   position: relative;
   width: 100%;
   z-index: 1;
@@ -71,7 +71,7 @@ a, a:hover {
 }
 
 .unslate_co--footer {
-  position: fixed !important;
+  /* position: fixed !important; */
   width: 100%;
   background-color: #191919;
   color: #fff;
@@ -2092,4 +2092,8 @@ span.error {
 .gallery-image-wrapper{
   padding: 10px ;
   margin: auto;
+}
+
+html, body{
+  overflow-x: hidden;
 }
