@@ -128,7 +128,7 @@
 }
 
 .timeline-title {
-  font-size: 1.2em;
+  font-size: 1.55em;
 }
 
 .disabled {
@@ -158,5 +158,9 @@
 
   .timeline-air{
     font-size: 1.5em;
+  }
+
+  .timeline-title{
+    font-size: 1.2em;
   }
 }
