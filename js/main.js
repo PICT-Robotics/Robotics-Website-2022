@@ -233,17 +233,7 @@ var owlCarouselPlugin = function() {
 	    autoplayHoverPause: true,
 	    dots: false,
 	    nav: false,
-	    responsive:{
-		    400:{
-		      items: 2
-		    },
-		    768:{
-		    	items: 3
-		    },
-		    1000:{
-		    	items: 5
-		    }
-	    }
+	    responsive: false
 	   });
 	}
 
