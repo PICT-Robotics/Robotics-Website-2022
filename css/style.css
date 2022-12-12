@@ -2097,3 +2097,9 @@ span.error {
 html, body{
   overflow-x: hidden;
 }
+
+@media (max-width:370px) {
+  .unslate_co--site-logo{
+    font-size: 1.25rem !important;
+  }
+}
