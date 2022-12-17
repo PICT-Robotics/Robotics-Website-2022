@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Robotics Workshop Registration</title>
+    <link rel="stylesheet" href="./css/registerStyle.css" />
+  </head>
+  <body>
+    <form action="/register" method="post" enctype="multipart/form-data">
+      <div id="svg_wrap"></div>
+
+      <h1>Robotics Workshop Registration</h1>
+      <section>
+        <p>Student 1 Details</p>
+        <input type="text" placeholder="Full Name" required />
+        <input type="number" placeholder="Roll Number" required />
+        <input type="number" placeholder="Phone Number" required />
+        <input type="email" placeholder="Email address" required />
+      </section>
+
+      <section>
+        <p>Student 2 Details</p>
+        <input type="text" placeholder="Full Name" required />
+        <input type="number" placeholder="Roll Number" required />
+        <input type="number" placeholder="Phone Number" required />
+        <input type="email" placeholder="Email address" />
+      </section>
+
+      <section>
+        <p>Student 3 Details</p>
+        <input type="text" placeholder="Full Name" required />
+        <input type="number" placeholder="Roll Number" required />
+        <input type="number" placeholder="Phone Number" required />
+        <input type="email" placeholder="Email address" />
+      </section>
+
+      <section>
+        <p>Student 4 Details</p>
+        <input type="text" placeholder="Full Name" required />
+        <input type="number" placeholder="Roll Number" required />
+        <input type="number" placeholder="Phone Number" required />
+        <input type="email" placeholder="Email address" />
+      </section>
+
+      <section>
+        <p>Trasaction Details</p>
+        <img class="qr-img" src="images/qr.jpeg" />
+        <label>Upload Trasaction Screenshot</label>
+        <input
+          type="file"
+          accept="image/*, .pdf"
+          placeholder="Transaction Screenshot"
+          required
+        />
+        <input type="text" placeholder="Trasaction ID" required />
+      </section>
+
+      <section>
+        <p>General condtitions</p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+          culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </section>
+
+      <div class="button" id="prev">&larr; Previous</div>
+      <div class="button" id="next">Next &rarr;</div>
+      <div class="button" id="submit">Agree and Register</div>
+    </form>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./js/registerScript.js"></script>
+  </body>
+</html>
