@@ -4,48 +4,33 @@
     <meta charset="UTF-8" />
     <title>Robotics Workshop Registration</title>
     <link rel="stylesheet" href="./css/registerStyle.css" />
+    <script src="./js/registerScript.js" defer></script>
   </head>
   <body>
+    <div class="bg-img"></div>
     <form action="https://robotics-registrations-backend.up.railway.app/register" method="post" enctype="multipart/form-data">
-      <div id="svg_wrap"></div>
-
-      <h1>Robotics Workshop Registration</h1>
-      <section>
-        <p>Student 1 Details</p>
-        <input type="text" placeholder="Full Name" name="s1-name"  />
-        <input type="number" placeholder="Roll Number" name="s1-rollno"  />
-        <input type="number" placeholder="Phone Number" name="s1-phone"  />
-        <input type="email" placeholder="Email address" name="s1-email"  />
+      <h1>PICT Robotics Workshop Registration</h1>
+      <section class="details">
+        <h1>General Details</h1>
+        blah blah blah
       </section>
+      <div id="student-details">
+        <section>
+          <p>Student 1 Details</p>
+          <input type="text" placeholder="Full Name" name="s1-name"  />
+          <input type="number" placeholder="Roll Number" name="s1-rollno"  />
+          <input type="number" placeholder="Phone Number" name="s1-phone"  />
+          <input type="email" placeholder="Email address" name="s1-email"  />
+        </section>
+      </div>
+      <button class="button" id="add-btn" type="button" onclick="addAnotherStudent()">Add</button>
+      <button class="button disabled" id="del-btn" type="button" onclick="delStudent()">Delete</button>
+
 
       <section>
-        <p>Student 2 Details</p>
-        <input type="text" placeholder="Full Name" name="s2-name"  />
-        <input type="number" placeholder="Roll Number" name="s2-rollno"  />
-        <input type="number" placeholder="Phone Number" name="s2-phone"  />
-        <input type="email" placeholder="Email address" name="s2-email"  />
-      </section>
-
-      <section>
-        <p>Student 3 Details</p>
-        <input type="text" placeholder="Full Name" name="s3-name"  />
-        <input type="number" placeholder="Roll Number" name="s3-rollno"  />
-        <input type="number" placeholder="Phone Number" name="s3-phone"  />
-        <input type="email" placeholder="Email address" name="s3-email"  />
-      </section>
-
-      <section>
-        <p>Student 4 Details</p>
-        <input type="text" placeholder="Full Name" name="s4-name"  />
-        <input type="number" placeholder="Roll Number" name="s4-rollno"  />
-        <input type="number" placeholder="Phone Number" name="s4-phone"  />
-        <input type="email" placeholder="Email address" name="s4-email"  />
-      </section>
-
-      <section>
-        <p>Trasaction Details</p>
+        <p>Payment Details</p>
         <img class="qr-img" src="images/qr.jpeg" />
-        <label>Upload Trasaction Screenshot</label>
+        <label>Upload Payment Screenshot</label>
         <input
           type="file"
           name="transaction-receipt"
@@ -57,24 +42,7 @@
         <input type="text" placeholder="Trasaction ID" name="transaction-id"  />
       </section>
 
-      <section>
-        <p>General condtitions</p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-      </section>
-
-      <div class="button" id="prev">&larr; Previous</div>
-      <div class="button" id="next">Next &rarr;</div>
-      <div class="button" id="submit"><input type="submit" class="submit-btn" value="Agree and Register"></div>
+      <button class="button">Submit Form</button>
     </form>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="./js/registerScript.js"></script>
   </body>
 </html>
