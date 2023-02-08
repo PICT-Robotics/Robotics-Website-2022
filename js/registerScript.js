@@ -4,7 +4,7 @@ const delBtn = document.getElementById("del-btn");
 
 function gen_inp(id){
     section = document.createElement("section");
-    section.innerHTML =`<p>Student ${id} Details</p>
+    section.innerHTML =`<span>Student ${id} Details</span>
         <input type="text" placeholder="Full Name" name="s${id}-name"  />
         <input type="number" placeholder="Roll Number" name="s${id}-rollno"  />
         <input type="number" placeholder="Phone Number" name="s${id}-phone"  />

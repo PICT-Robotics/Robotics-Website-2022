@@ -20,10 +20,10 @@
         <div id="student-details">
           <section>
             <span>Student 1 Details</span><br>
-            <input type="text" placeholder="Full Name" name="s1-name"  />
-            <input type="number" placeholder="Roll Number" name="s1-rollno"  />
-            <input type="number" placeholder="Phone Number" name="s1-phone"  />
-            <input type="email" placeholder="Email address" name="s1-email"  />
+            <input type="text" placeholder="Full Name" name="s1-name" required/>
+            <input type="number" placeholder="Roll Number" name="s1-rollno"  required/>
+            <input type="number" placeholder="Phone Number" name="s1-phone"  required/>
+            <input type="email" placeholder="Email address" name="s1-email"  required/>
           </section>
         </div>
         <button class="button" id="add-btn" type="button" onclick="addAnotherStudent()">Add Another</button>
@@ -39,10 +39,10 @@
             name="transaction-receipt"
             accept=".jpg,.jpeg,.png"
             placeholder="Transaction Screenshot"
-            
+            required
           />
           <label>(jpg/jpeg/png, not more than 16MB)</label>
-          <input type="text" placeholder="Trasaction ID" name="transaction-id"  />
+          <input type="text" placeholder="Trasaction ID" name="transaction-id"  required/>
         </section>
 
         <button class="button">Submit Form</button>
