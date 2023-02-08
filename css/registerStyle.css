@@ -138,3 +138,11 @@ input {
     height: 100%;
     top: 0.3em
 }
+
+.header {
+    display: inline-block;
+    padding: 0 20px;
+    margin-top: 5px;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
