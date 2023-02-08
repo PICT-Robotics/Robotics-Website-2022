@@ -2,47 +2,51 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Robotics Workshop Registration</title>
     <link rel="stylesheet" href="./css/registerStyle.css" />
     <script src="./js/registerScript.js" defer></script>
   </head>
   <body>
     <div class="bg-img"></div>
-    <form action="https://robotics-registrations-backend.up.railway.app/register" method="post" enctype="multipart/form-data">
-      <h1>PICT Robotics Workshop Registration</h1>
-      <section class="details">
-        <h1>General Details</h1>
-        blah blah blah
-      </section>
-      <div id="student-details">
-        <section>
-          <p>Student 1 Details</p>
-          <input type="text" placeholder="Full Name" name="s1-name"  />
-          <input type="number" placeholder="Roll Number" name="s1-rollno"  />
-          <input type="number" placeholder="Phone Number" name="s1-phone"  />
-          <input type="email" placeholder="Email address" name="s1-email"  />
+    <div class="content">
+      <form action="https://robotics-registrations-backend.up.railway.app/register" method="post" enctype="multipart/form-data">
+        <h1>PICT Robotics</h1>
+        <h2>Annual Workshop Registration</h2>
+        <section class="details">
+          <h1>General Details</h1>
+          blah blah blah
         </section>
-      </div>
-      <button class="button" id="add-btn" type="button" onclick="addAnotherStudent()">Add</button>
-      <button class="button disabled" id="del-btn" type="button" onclick="delStudent()">Delete</button>
+        <div id="student-details">
+          <section>
+            <span>Student 1 Details</span><br>
+            <input type="text" placeholder="Full Name" name="s1-name"  />
+            <input type="number" placeholder="Roll Number" name="s1-rollno"  />
+            <input type="number" placeholder="Phone Number" name="s1-phone"  />
+            <input type="email" placeholder="Email address" name="s1-email"  />
+          </section>
+        </div>
+        <button class="button" id="add-btn" type="button" onclick="addAnotherStudent()">Add Another</button>
+        <button class="button disabled" id="del-btn" type="button" onclick="delStudent()">Delete</button>
 
 
-      <section>
-        <p>Payment Details</p>
-        <img class="qr-img" src="images/qr.jpeg" />
-        <label>Upload Payment Screenshot</label>
-        <input
-          type="file"
-          name="transaction-receipt"
-          accept=".jpg,.jpeg,.png"
-          placeholder="Transaction Screenshot"
-          
-        />
-        <label>(jpg/jpeg/png, not more than 16MB)</label>
-        <input type="text" placeholder="Trasaction ID" name="transaction-id"  />
-      </section>
+        <section>
+          <p>Payment Details</p>
+          <img class="qr-img" src="images/qr.jpeg" />
+          <label>Upload Payment Screenshot</label>
+          <input
+            type="file"
+            name="transaction-receipt"
+            accept=".jpg,.jpeg,.png"
+            placeholder="Transaction Screenshot"
+            
+          />
+          <label>(jpg/jpeg/png, not more than 16MB)</label>
+          <input type="text" placeholder="Trasaction ID" name="transaction-id"  />
+        </section>
 
-      <button class="button">Submit Form</button>
-    </form>
+        <button class="button">Submit Form</button>
+      </form>
+    </div>
   </body>
 </html>
