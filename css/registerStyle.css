@@ -146,3 +146,9 @@ input {
     border-radius: 20px;
     background: linear-gradient(to right, #009fff90, #ec2f4b);
 }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
