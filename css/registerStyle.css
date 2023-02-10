@@ -52,7 +52,7 @@ button {
 }
 
 section {
-    padding: 50px;
+    padding: 20px;
     margin: 30px 20px;
     background: white;
     background: rgba(255, 255, 255, 0.9);
@@ -129,7 +129,9 @@ input {
 
     section{
         margin: 30px auto;
+        padding: 50px
     }
+
 }
 
 #club-logo{
@@ -151,4 +153,12 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+ol{
+    padding-inline-start: 10px;
+}
+
+li{
+    text-align: left;
 }
