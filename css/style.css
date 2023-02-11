@@ -2103,3 +2103,47 @@ html, body{
     font-size: 1.25rem !important;
   }
 }
+
+.workshop-promo{
+  position: fixed;
+  /* max-width: 600px; */
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+  /* background-color: white; */
+  color: black;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  float: left;
+}
+
+.banner{
+  font-size: 35px;
+}
+
+.close-btn{
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-top: 20px;
+  margin-right: 20px;
+  color: red;
+  font-weight: bold;
+  width: 1em;
+  height: 1em;
+}
+
+.workshop-promo-text{
+  position: absolute;
+  left: 50vw;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  max-width: 800px;
+  min-width: 300px;
+  float: left;
+  user-select: none;
+  font-size: 25px;
+  border-radius: 15px;
+  padding: 15px;
+}

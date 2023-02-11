@@ -666,3 +666,6 @@ var animateReveal = function() {
 
 }
 
+document.querySelector(".close-btn").addEventListener('click', ()=>{
+	document.querySelector('.workshop-promo').classList.add('disabled')
+})
