@@ -162,3 +162,7 @@ ol{
 li{
     text-align: left;
 }
+
+.yellow-highlight{
+    background-color: yellow;
+}
