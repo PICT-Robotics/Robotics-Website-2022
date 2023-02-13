@@ -13,7 +13,7 @@ function gen_inp(id){
     studentDetailsDiv.appendChild(section);
 }
 
-var count_students = 2;
+var count_students = 3;
 
 function delStudent(){
     studentDetailsDiv.removeChild(studentDetailsDiv.lastChild)
@@ -33,7 +33,7 @@ function setBtnVisibility(){
     else
         addBtn.classList.remove("disabled");
 
-    if(count_students>2)
+    if(count_students>3)
         delBtn.classList.remove("disabled");
     else
         delBtn.classList.add("disabled");

@@ -1,82 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="favico.png" />
-    <title>Robotics Workshop Registration</title>
-    <link rel="stylesheet" href="./css/registerStyle.css" />
-    <script src="./js/registerScript.js" defer></script>
-  </head>
-  <body>
-    <div class="bg-img"></div>
-    <div class="content">
-      <form action="https://workshop.pictrobotics.org/register" method="post" enctype="multipart/form-data">
-        <div class="header">
-          <h1><img src="favico.png" id="club-logo"> PICT Robotics</h1>
-          <h2>Annual Workshop Registration</h2>
-        </div>
-        <section class="details">
-          <h1>General Details</h1>
-          <ol>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="favico.png" />
+  <title>Robotics Workshop Registration</title>
+  <link rel="stylesheet" href="./css/registerStyle.css" />
+  <script src="./js/registerScript.js" defer></script>
+</head>
+
+<body>
+  <div class="bg-img"></div>
+  <div class="content">
+    <form action="https://workshop.pictrobotics.org/register" method="post" enctype="multipart/form-data">
+      <div class="header">
+        <h1><img src="favico.png" id="club-logo"> PICT Robotics</h1>
+        <h2>Annual Workshop Registration</h2>
+      </div>
+      <section class="details">
+        <h1>General Details</h1>
+        <ol>
+          <b>
             <li> Registration Fees are as follows
               <ul style="list-style-type: disc;">
-                <li>Group of 2: ₹1899/-</li>
-                <li>Group of 3: ₹2750/-<br>(early bird - ₹2499/-)</li>
-                <li>Group of 4: ₹3250/-<br>(early bird - ₹2999/-)</li>
+                <li>Group of 3: ₹1650/-</li>
+                <li>Group of 4: ₹2220/-</li>
               </ul>
-              Please make sure you pay correct amount
-            </li>
-            <hr>
-            <li>Early bird price is applicable only if paid before 13/02/2023 12.00 PM</li>
-            <hr>
-            <li>Only 1 kit will be provided for each group irrespective of group size</li>
-            <hr>
-            <li>Workshop will be conducted on 17-18-19th Feb 2023. Timings will be conveyed soon</li>
-            
-          </ol>
-        </section>
-        <div id="student-details">
-          <section>
-            <span>Student 1 Details</span><br>
-            <input type="text" placeholder="Full Name" name="s1-name" required/>
-            <input type="number" placeholder="Roll Number" name="s1-rollno"  required/>
-            <input type="number" placeholder="Phone Number" name="s1-phone"  required/>
-            <input type="email" placeholder="Email address" name="s1-email"  required/>
-          </section>
-          <section>
-            <span>Student 2 Details</span><br>
-            <input type="text" placeholder="Full Name" name="s2-name" required/>
-            <input type="number" placeholder="Roll Number" name="s2-rollno"  required/>
-            <input type="number" placeholder="Phone Number" name="s2-phone"  required/>
-            <input type="email" placeholder="Email address" name="s2-email"  required/>
-          </section>
-        </div>
-        <button class="button" id="add-btn" type="button" onclick="addAnotherStudent()">Add Another</button>
-        <button class="button disabled" id="del-btn" type="button" onclick="delStudent()">Delete</button>
-
-
-        <section>
-          <h1 style="color:black">Fees Payment</h1>
-          <b>Pay your registration fees on following UPI ID</b>
-          <img class="qr-img" src="images/qr.jpeg" />
-          <span>UPI: 8390728956@boi</span>
-          <div class="yellow-highlight">Please mention your name and roll number as transaction note</div>
+          </b>
+          Please make sure you pay correct amount
+          </li>
           <hr>
-          <label>Upload Payment Screenshot</label>
-          <input
-            type="file"
-            name="transaction-receipt"
-            accept=".jpg,.jpeg,.png"
-            placeholder="Transaction Screenshot"
-            required
-          />
-          <label>(jpg/jpeg/png, not more than 5MB)</label>
-          <!-- <input type="text" placeholder="Trasaction ID" name="transaction-id"  required/> -->
-        </section>
+          <li>Early bird price is applicable only if paid before 13/02/2023 12.00 PM</li>
+          <hr>
+          <li>Only 1 kit will be provided for each group irrespective of group size</li>
+          <hr>
+          <li>Workshop will be conducted on 17-18-19th Feb 2023. Timings will be conveyed soon</li>
 
-        <button class="button">Submit Form</button>
-      </form>
-    </div>
-  </body>
+        </ol>
+      </section>
+      <div id="student-details">
+        <section>
+          <span>Student 1 Details</span><br>
+          <input type="text" placeholder="Full Name" name="s1-name" required />
+          <input type="number" placeholder="Roll Number" name="s1-rollno" required />
+          <input type="number" placeholder="Phone Number" name="s1-phone" required />
+          <input type="email" placeholder="Email address" name="s1-email" required />
+        </section>
+        <section>
+          <span>Student 2 Details</span><br>
+          <input type="text" placeholder="Full Name" name="s2-name" required />
+          <input type="number" placeholder="Roll Number" name="s2-rollno" required />
+          <input type="number" placeholder="Phone Number" name="s2-phone" required />
+          <input type="email" placeholder="Email address" name="s2-email" required />
+        </section>
+        <section>
+          <span>Student 3 Details</span><br>
+          <input type="text" placeholder="Full Name" name="s3-name" required />
+          <input type="number" placeholder="Roll Number" name="s3-rollno" required />
+          <input type="number" placeholder="Phone Number" name="s3-phone" required />
+          <input type="email" placeholder="Email address" name="s3-email" required />
+        </section>
+      </div>
+      <button class="button" id="add-btn" type="button" onclick="addAnotherStudent()">Add Another</button>
+      <button class="button disabled" id="del-btn" type="button" onclick="delStudent()">Delete</button>
+
+
+      <section>
+        <h1 style="color:black">Fees Payment</h1>
+        <b>Pay your registration fees on following UPI ID</b>
+        <img class="qr-img" src="images/qr.jpeg" />
+        <span>UPI: 8390728956@boi</span>
+        <div class="yellow-highlight">Please mention your name and roll number as transaction note</div>
+        <hr>
+        <label>Upload Payment Screenshot</label>
+        <input type="file" name="transaction-receipt" accept=".jpg,.jpeg,.png" placeholder="Transaction Screenshot"
+          required />
+        <label>(jpg/jpeg/png, not more than 5MB)</label>
+        <!-- <input type="text" placeholder="Trasaction ID" name="transaction-id"  required/> -->
+      </section>
+
+      <button class="button">Submit Form</button>
+    </form>
+  </div>
+</body>
+
 </html>
