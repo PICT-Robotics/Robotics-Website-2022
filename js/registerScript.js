@@ -13,18 +13,20 @@ function gen_inp(id){
     studentDetailsDiv.appendChild(section);
 }
 
-var count_students = 3;
+var count_students = 1;
 
 function delStudent(){
     studentDetailsDiv.removeChild(studentDetailsDiv.lastChild)
     count_students--;
     setBtnVisibility();
+    if(count_students == 2) delStudent();
 }
 
 function addAnotherStudent() {
     count_students++;
     gen_inp(count_students);
     setBtnVisibility();
+    if(count_students == 2) addAnotherStudent();
 }
 
 function setBtnVisibility(){
@@ -33,7 +35,7 @@ function setBtnVisibility(){
     else
         addBtn.classList.remove("disabled");
 
-    if(count_students>3)
+    if(count_students>1)
         delBtn.classList.remove("disabled");
     else
         delBtn.classList.add("disabled");
